@@ -1,1 +1,16 @@
+# Force Simulink and MATLAB detection
+*.slx linguist-language=MATLAB
+*.m linguist-language=MATLAB
 
+# Force ONNX and Model files detection
+*.onnx linguist-language=JSON
+*.bin linguist-vendored
+
+# Treat images and results as documentation (hides them from language bar)
+*.png linguist-documentation
+*.jpg linguist-documentation
+*.jpeg linguist-documentation
+
+# Ignore license and attributes from stats
+LICENSE linguist-documentation
+.gitattributes linguist-documentation
