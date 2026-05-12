@@ -2,6 +2,10 @@
 *.slx linguist-language=MATLAB
 *.m linguist-language=MATLAB
 
+# Ensure Simulink binary files are not treated as "Other"
+*.slx linguist-binary=false
+*.mdl linguist-language=MATLAB
+
 # Force ONNX and Model files detection
 *.onnx linguist-language=JSON
 *.bin linguist-vendored
